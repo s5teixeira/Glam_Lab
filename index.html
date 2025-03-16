@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steph's Glam Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="border-container">
+        <h1 class="title">✨ Steph's Glam Lab ✨</h1>
+        <div class="description">
+            <p>💄 Welcome to <strong>Steph's Glam Lab</strong>, the ultimate place to create your own custom lipstick shades!</p>
+            <p>🎨 Drag and drop colors into the mix area, then click the mix area box to apply your custom shade to the model's lips.</p>
+            <p>💾 Save your favorite shades and build a personalized lipstick collection!</p>
+        </div>
+
+        <div class="palette">
+            <h3>🎨 Choose Your Colors</h3>
+            <div class="color" style="background-color: red;" data-color="red"></div>
+            <div class="color" style="background-color: pink;" data-color="pink"></div>
+            <div class="color" style="background-color: coral;" data-color="coral"></div>
+            <div class="color" style="background-color: plum;" data-color="plum"></div>
+            <div class="color" style="background-color: orange;" data-color="orange"></div>
+            <div class="color" style="background-color: brown;" data-color="brown"></div>
+            <div class="color" style="background-color: fuchsia;" data-color="fuchsia"></div>
+            <div class="color" style="background-color: gold;" data-color="gold"></div>
+            <div class="color" style="background-color: navy;" data-color="navy"></div>
+            <div class="color" style="background-color: teal;" data-color="teal"></div>
+        </div>
+
+        <div class="mix-area" id="mixArea">Drop colors here</div>
+
+        <div class="model">
+            <p>💋 Virtual Model</p>
+            <div style="position: relative; display: inline-block;">
+                <img src="model-face.png" alt="Model Face">
+                <div class="lips-overlay" id="lipsOverlay"></div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="save-button" id="saveColor">💾 Save Color</button>
+            <button class="reset-button" id="resetMix">🔄 Reset</button>
+        </div>
+
+        <div>
+            <h3>💖 Saved Colors</h3>
+            <div id="savedColors"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

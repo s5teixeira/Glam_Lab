@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #ffe6f2;
+    color: #5a2d51;
+    padding: 20px;
+}
+
+.border-container {
+    border: 8px solid #ff66b2;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff0f5;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #ff1493;
+    text-shadow: 2px 2px 8px rgba(255, 20, 147, 0.5);
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    background-color: #ffccdf;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.palette, .mix-area, .model {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+
+.palette h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.palette div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    cursor: grab;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.palette div:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mix-area {
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    border: 3px dashed #5a2d51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.model {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.model img {
+    width: 600px;
+    border-radius: 15px;
+}
+
+.lips-overlay {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    top: 355px;
+    left: 220px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.save-button, .reset-button {
+    margin-top: 10px;
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.save-button {
+    background-color: #ff66b2;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #e0559c;
+}
+
+.reset-button {
+    background-color: #333;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #222;
+}
